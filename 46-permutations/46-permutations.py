@@ -10,7 +10,7 @@ class Solution:
             
             for j in permutation:
                 j.append(n) # [2,3,1] [3,2,1]
-                ans.append(j)
+            ans.extend(permutation)
             nums.append(n) #2,3,1
         return ans
         
