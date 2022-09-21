@@ -10,13 +10,11 @@ class Solution:
             for k,v in nums_count.items():
                 if v == max_value[1]:
                     ans.append(k)     
-            
-        
+                    
             if len(ans) > 1:
                 return min(ans)
             else:
-                for i in ans:
-                    return i 
+                return ans[0]
         else:
             return -1
     
